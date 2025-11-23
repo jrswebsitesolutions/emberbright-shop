@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, ShoppingCart } from 'lucide-react';
+import { Menu, X, ShoppingCart, Phone } from 'lucide-react';
 import { useNavigation } from '../context/NavigationContext';
 import { routes } from '../utils/navigation';
 import CartIcon from './CartIcon';
@@ -29,9 +29,10 @@ const Header = () => {
   // Essential navigation for e-commerce
   const navLinks = [
     { label: 'Home', path: routes.home },
+    { label: 'About', path: routes.about },
     { label: 'Products', path: routes.products },
     { label: 'Gallery', path: routes.gallery },
-    { label: 'About', path: routes.about },
+    { label: 'Service Areas', path: routes.serviceAreas },
     { label: 'FAQ', path: routes.faq },
     { label: 'Contact', path: routes.contact }
   ];
@@ -68,6 +69,13 @@ const Header = () => {
           </nav>
 
           <div className="hidden lg:flex items-center space-x-4">
+            <a
+              href="tel:4036715625"
+              className="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary-500 transition-colors"
+            >
+              <Phone className="w-4 h-4" />
+              <span>(403) 671-5625</span>
+            </a>
             <CartIcon />
             <button
               onClick={() => navigate(routes.estimate)}
@@ -103,6 +111,13 @@ const Header = () => {
               </button>
             ))}
             <div className="pt-4 space-y-3 border-t border-gray-200">
+              <a
+                href="tel:4036715625"
+                className="flex items-center justify-center space-x-2 w-full px-4 py-2.5 text-base font-medium text-gray-700 border border-gray-300 rounded-lg hover:border-primary-500 hover:text-primary-500 transition-colors"
+              >
+                <Phone className="w-4 h-4" />
+                <span>(403) 671-5625</span>
+              </a>
               <button
                 onClick={() => navigate(routes.cart)}
                 className="flex items-center justify-center space-x-2 w-full px-4 py-2.5 text-base font-medium text-gray-700 border border-gray-300 rounded-lg hover:border-primary-500 hover:text-primary-500 transition-colors"
