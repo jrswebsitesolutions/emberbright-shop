@@ -1,15 +1,19 @@
 import { NavigationProvider, useNavigation } from './context/NavigationContext';
+import { CartProvider } from './context/CartContext';
 import { routes } from './utils/navigation';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
+import Products from './pages/Products';
 import ResidentialLighting from './pages/ResidentialLighting';
 import Gallery from './pages/Gallery';
 import Help from './pages/Help';
 import ServiceAreas from './pages/ServiceAreas';
 import Contact from './pages/Contact';
 import Estimate from './pages/Estimate';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
 const AppContent = () => {
@@ -21,11 +25,13 @@ const AppContent = () => {
         return <Home />;
       case routes.about:
         return <About />;
+      case routes.products:
+        return <Products />;
       case routes.residential:
         return <ResidentialLighting />;
       case routes.gallery:
         return <Gallery />;
-      case routes.help:
+      case routes.faq:
         return <Help />;
       case routes.serviceAreas:
         return <ServiceAreas />;
@@ -33,6 +39,10 @@ const AppContent = () => {
         return <Contact />;
       case routes.estimate:
         return <Estimate />;
+      case routes.cart:
+        return <Cart />;
+      case routes.checkout:
+        return <Checkout />;
       case routes.privacy:
         return <PrivacyPolicy />;
       default:
@@ -54,7 +64,9 @@ const AppContent = () => {
 function App() {
   return (
     <NavigationProvider>
-      <AppContent />
+      <CartProvider>
+        <AppContent />
+      </CartProvider>
     </NavigationProvider>
   );
 }

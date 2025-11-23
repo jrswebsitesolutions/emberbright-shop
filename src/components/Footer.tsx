@@ -21,8 +21,8 @@ const Footer = () => {
     { label: 'About', path: routes.about },
     { label: 'Residential Lighting', path: routes.residential },
     { label: 'Gallery', path: routes.gallery },
-    { label: 'Help', path: routes.help },
     { label: 'Service Areas', path: routes.serviceAreas },
+    { label: 'FAQ', path: routes.faq },
     { label: 'Privacy Policy', path: routes.privacy }
   ];
 

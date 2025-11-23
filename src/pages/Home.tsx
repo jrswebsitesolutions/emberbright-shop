@@ -407,7 +407,7 @@ const Home = () => {
 
           <div className="text-center mt-12">
             <button
-              onClick={() => navigate(routes.help)}
+              onClick={() => navigate(routes.faq)}
               className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors shadow-md hover:shadow-lg"
             >
               View All FAQs
