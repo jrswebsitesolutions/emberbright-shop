@@ -187,9 +187,11 @@ const Home = () => {
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               The EmberBright System
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Discover the key features that make EmberBright the premium choice for permanent outdoor lighting
-            </p>
+            <div className="flex justify-center">
+              <p className="text-lg text-gray-600 whitespace-nowrap">
+                Discover the key features that make EmberBright the premium choice for permanent outdoor lighting
+              </p>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
