@@ -47,9 +47,22 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           <button
             onClick={() => navigate(routes.home)}
-            className="text-2xl font-bold text-gray-900 hover:text-primary-500 transition-colors"
+            className="flex items-center h-12 hover:opacity-80 transition-opacity"
           >
-            EmberBright
+            <img 
+              src="/logo.webp" 
+              alt="EmberBright" 
+              className="h-full w-auto"
+              onError={(e) => {
+                // Fallback to text if image doesn't load
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+                if (target.parentElement) {
+                  target.parentElement.textContent = 'EmberBright';
+                  target.parentElement.className = 'text-2xl font-bold text-gray-900 hover:text-primary-500 transition-colors';
+                }
+              }}
+            />
           </button>
 
           <nav className="hidden lg:flex items-center space-x-8">
