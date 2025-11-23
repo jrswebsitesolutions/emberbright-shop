@@ -11,6 +11,10 @@
     font-family: 'Archivo Black', sans-serif;
   }
   
+  h1 {
+    text-transform: uppercase;
+  }
+  
   button {
     font-family: 'Space Grotesk', sans-serif;
   }
