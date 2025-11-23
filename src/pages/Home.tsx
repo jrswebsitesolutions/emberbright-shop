@@ -1,36 +1,35 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
 import {
   Smartphone, Calendar, Palette, Shield, Award, Users,
   ArrowRight, CheckCircle, Zap, Clock, Globe, ChevronRight
 } from 'lucide-react';
 import { useNavigation } from '../context/NavigationContext';
 import { routes } from '../utils/navigation';
-import type { LeadFormData } from '../types';
 
 const Home = () => {
   const { setCurrentPage } = useNavigation();
-  const [formData, setFormData] = useState<Partial<LeadFormData>>({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    serviceArea: '',
-    propertyType: '',
-    linearFootage: '',
-    message: ''
-  });
-  const [formSubmitted, setFormSubmitted] = useState(false);
+
+  useEffect(() => {
+    // Load Jobber form script
+    const script = document.createElement('script');
+    script.src = 'https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js';
+    script.setAttribute('clienthub_id', 'b6f7d3b2-32ea-430e-b6a2-093064933cc6-2030236');
+    script.setAttribute('form_url', 'https://clienthub.getjobber.com/client_hubs/b6f7d3b2-32ea-430e-b6a2-093064933cc6/public/work_request/embedded_work_request_form?form_id=2030236');
+    script.async = true;
+    
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup: remove script when component unmounts
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
+  }, []);
 
   const navigate = (page: string) => {
     setCurrentPage(page);
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Lead form submitted:', formData);
-    setFormSubmitted(true);
-    setTimeout(() => setFormSubmitted(false), 5000);
   };
 
   const features = [
@@ -422,139 +421,19 @@ const Home = () => {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Get Your Free Estimate
-            </h2>
+            <div className="flex justify-center mb-4">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 whitespace-nowrap">
+                Get Your Free Estimate
+              </h2>
+            </div>
             <p className="text-lg text-gray-600">
               Share a few details and we'll provide a tailored quote for your home
             </p>
           </div>
 
-          {formSubmitted ? (
-            <div className="bg-green-50 border border-green-200 rounded-lg p-8 text-center">
-              <CheckCircle className="w-12 h-12 text-green-600 mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Thank You!</h3>
-              <p className="text-gray-700">
-                We've received your request and will be in touch soon to discuss your permanent lighting project.
-              </p>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="bg-gray-50 rounded-xl p-8 shadow-md">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">
-                    First Name *
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    value={formData.firstName}
-                    onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">
-                    Last Name *
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    value={formData.lastName}
-                    onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">
-                    Phone *
-                  </label>
-                  <input
-                    type="tel"
-                    required
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">
-                    Service Area *
-                  </label>
-                  <select
-                    required
-                    value={formData.serviceArea}
-                    onChange={(e) => setFormData({ ...formData, serviceArea: e.target.value })}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  >
-                    <option value="">Select an area</option>
-                    <option value="Calgary">Calgary + Surrounding</option>
-                    <option value="Edmonton">Edmonton + Surrounding</option>
-                    <option value="Lethbridge">Lethbridge + Surrounding</option>
-                    <option value="Okanagan">Okanagan Area</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">
-                    Property Type
-                  </label>
-                  <select
-                    value={formData.propertyType}
-                    onChange={(e) => setFormData({ ...formData, propertyType: e.target.value })}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  >
-                    <option value="">Select property type</option>
-                    <option value="Single-family">Single-family</option>
-                    <option value="Townhome">Townhome</option>
-                    <option value="Duplex">Duplex</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
-                <div className="md:col-span-2">
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">
-                    Approximate Linear Footage
-                  </label>
-                  <input
-                    type="text"
-                    value={formData.linearFootage}
-                    onChange={(e) => setFormData({ ...formData, linearFootage: e.target.value })}
-                    placeholder="e.g., 200 feet or 'Not sure'"
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  />
-                </div>
-                <div className="md:col-span-2">
-                  <label className="block text-sm font-semibold text-gray-900 mb-2">
-                    Message / Additional Details
-                  </label>
-                  <textarea
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    rows={4}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  />
-                </div>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full mt-6 px-6 py-3.5 bg-primary-600 text-white text-lg font-semibold rounded-lg hover:bg-primary-700 transition-colors shadow-md hover:shadow-lg"
-              >
-                Submit Request
-              </button>
-            </form>
-          )}
+          <div className="bg-gray-50 rounded-xl p-8 shadow-md">
+            <div id="b6f7d3b2-32ea-430e-b6a2-093064933cc6-2030236"></div>
+          </div>
         </div>
       </section>
     </div>

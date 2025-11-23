@@ -25,12 +25,11 @@ const Estimate = () => {
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white pt-32 pb-20 lg:pt-40 lg:pb-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Get Your Free Estimate
-            </h1>
-            <p className="text-lg sm:text-xl text-gray-200 leading-relaxed">
-              Share a few details about your property and we'll provide a tailored quote for your permanent LED lighting project
-            </p>
+            <div className="flex justify-center mb-6">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight whitespace-nowrap">
+                Get Your Free Estimate
+              </h1>
+            </div>
           </div>
         </div>
       </section>
@@ -40,6 +39,9 @@ const Estimate = () => {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
               <div className="bg-gray-50 rounded-xl p-8 lg:p-10 shadow-md">
+                <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  Share a few details about your property and we'll provide a tailored quote for your permanent LED lighting project
+                </p>
                 <div id="b6f7d3b2-32ea-430e-b6a2-093064933cc6-2030236"></div>
               </div>
             </div>
