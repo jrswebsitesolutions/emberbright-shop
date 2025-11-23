@@ -121,7 +121,7 @@ const ResidentialLighting = () => {
               Transform your home with low-profile permanent LED lighting designed for year-round beauty, complete automation, and exceptional longevity
             </p>
             <button
-              onClick={() => navigate(routes.contact)}
+              onClick={() => navigate(routes.estimate)}
               className="px-8 py-4 bg-primary-600 text-white text-lg font-semibold rounded-lg hover:bg-primary-700 transition-all shadow-xl hover:shadow-2xl hover:scale-105 inline-flex items-center"
             >
               Request Your Free Estimate
@@ -288,7 +288,7 @@ const ResidentialLighting = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
-              onClick={() => navigate(routes.contact)}
+              onClick={() => navigate(routes.estimate)}
               className="w-full sm:w-auto px-8 py-4 bg-white text-primary-600 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl inline-flex items-center justify-center"
             >
               Request Your Free Estimate

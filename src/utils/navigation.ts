@@ -6,6 +6,7 @@ export const routes = {
   help: '/help',
   serviceAreas: '/service-areas',
   contact: '/contact',
+  estimate: '/estimate',
   privacy: '/privacy-policy'
 };
 

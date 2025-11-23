@@ -126,7 +126,7 @@ const Help = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
-              onClick={() => navigate(routes.contact)}
+              onClick={() => navigate(routes.estimate)}
               className="w-full sm:w-auto px-8 py-4 bg-primary-600 text-white text-lg font-semibold rounded-lg hover:bg-primary-700 transition-all shadow-md hover:shadow-lg inline-flex items-center justify-center"
             >
               Contact Us

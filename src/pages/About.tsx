@@ -172,7 +172,7 @@ const About = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
-              onClick={() => navigate(routes.contact)}
+              onClick={() => navigate(routes.estimate)}
               className="w-full sm:w-auto px-8 py-4 bg-white text-primary-600 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl inline-flex items-center justify-center"
             >
               Start Your Free Estimate

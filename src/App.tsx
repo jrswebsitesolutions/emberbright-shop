@@ -9,6 +9,7 @@ import Gallery from './pages/Gallery';
 import Help from './pages/Help';
 import ServiceAreas from './pages/ServiceAreas';
 import Contact from './pages/Contact';
+import Estimate from './pages/Estimate';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
 const AppContent = () => {
@@ -30,6 +31,8 @@ const AppContent = () => {
         return <ServiceAreas />;
       case routes.contact:
         return <Contact />;
+      case routes.estimate:
+        return <Estimate />;
       case routes.privacy:
         return <PrivacyPolicy />;
       default:

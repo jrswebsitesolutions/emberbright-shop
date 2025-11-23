@@ -72,7 +72,7 @@ const Header = () => {
               <span>(403) 671-5625</span>
             </a>
             <button
-              onClick={() => navigate(routes.contact)}
+              onClick={() => navigate(routes.estimate)}
               className="px-6 py-2.5 bg-primary-500 text-white text-sm font-semibold rounded-lg hover:bg-primary-600 transition-colors shadow-md hover:shadow-lg"
             >
               Free Estimate
@@ -113,7 +113,7 @@ const Header = () => {
                 <span>(403) 671-5625</span>
               </a>
               <button
-                onClick={() => navigate(routes.contact)}
+                onClick={() => navigate(routes.estimate)}
                 className="w-full px-6 py-2.5 bg-primary-500 text-white text-base font-semibold rounded-lg hover:bg-primary-600 transition-colors shadow-md"
               >
                 Free Estimate
