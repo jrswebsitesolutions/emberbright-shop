@@ -70,7 +70,7 @@ const Header = () => {
               <button
                 key={link.path}
                 onClick={() => navigate(link.path)}
-                className={`text-sm font-medium transition-colors ${
+                className={`text-sm font-medium transition-colors font-heading ${
                   currentPage === link.path
                     ? 'text-primary-500'
                     : 'text-gray-700 hover:text-primary-500'
@@ -108,21 +108,21 @@ const Header = () => {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-200 shadow-lg">
-          <nav className="px-4 py-6 space-y-4">
-            {navLinks.map((link) => (
-              <button
-                key={link.path}
-                onClick={() => navigate(link.path)}
-                className={`block w-full text-left px-4 py-2 text-base font-medium rounded-lg transition-colors ${
-                  currentPage === link.path
-                    ? 'text-primary-500 bg-primary-50'
-                    : 'text-gray-700 hover:text-primary-500 hover:bg-gray-50'
-                }`}
-              >
-                {link.label}
-              </button>
-            ))}
+            <div className="lg:hidden bg-white border-t border-gray-200 shadow-lg">
+              <nav className="px-4 py-6 space-y-4">
+                {navLinks.map((link) => (
+                  <button
+                    key={link.path}
+                    onClick={() => navigate(link.path)}
+                    className={`block w-full text-left px-4 py-2 text-base font-medium rounded-lg transition-colors font-heading ${
+                      currentPage === link.path
+                        ? 'text-primary-500 bg-primary-50'
+                        : 'text-gray-700 hover:text-primary-500 hover:bg-gray-50'
+                    }`}
+                  >
+                    {link.label}
+                  </button>
+                ))}
             <div className="pt-4 space-y-3 border-t border-gray-200">
               <a
                 href="tel:4036715625"
