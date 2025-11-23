@@ -156,7 +156,7 @@ const Home = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 whitespace-nowrap">
               The future of home lighting
             </h1>
             <p className="text-lg sm:text-xl text-gray-200 mb-10 leading-relaxed">
