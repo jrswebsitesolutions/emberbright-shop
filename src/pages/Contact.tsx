@@ -100,7 +100,7 @@ const Contact = () => {
                   </p>
                   <p className="text-gray-600">
                     Need immediate assistance? Call us at{' '}
-                    <a href="tel:4036715625" className="text-orange-600 font-semibold hover:text-orange-700">
+                    <a href="tel:4036715625" className="text-primary-600 font-semibold hover:text-primary-700">
                       (403) 671-5625
                     </a>
                   </p>
@@ -114,13 +114,13 @@ const Contact = () => {
                   <div className="grid md:grid-cols-2 gap-6 mb-6">
                     <div>
                       <label className="block text-sm font-semibold text-gray-900 mb-2">
-                        First Name <span className="text-orange-600">*</span>
+                        First Name <span className="text-primary-600">*</span>
                       </label>
                       <input
                         type="text"
                         value={formData.firstName}
                         onChange={(e) => handleInputChange('firstName', e.target.value)}
-                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors ${
+                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors ${
                           errors.firstName ? 'border-red-500' : 'border-gray-300'
                         }`}
                       />
@@ -131,13 +131,13 @@ const Contact = () => {
 
                     <div>
                       <label className="block text-sm font-semibold text-gray-900 mb-2">
-                        Last Name <span className="text-orange-600">*</span>
+                        Last Name <span className="text-primary-600">*</span>
                       </label>
                       <input
                         type="text"
                         value={formData.lastName}
                         onChange={(e) => handleInputChange('lastName', e.target.value)}
-                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors ${
+                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors ${
                           errors.lastName ? 'border-red-500' : 'border-gray-300'
                         }`}
                       />
@@ -148,13 +148,13 @@ const Contact = () => {
 
                     <div>
                       <label className="block text-sm font-semibold text-gray-900 mb-2">
-                        Email <span className="text-orange-600">*</span>
+                        Email <span className="text-primary-600">*</span>
                       </label>
                       <input
                         type="email"
                         value={formData.email}
                         onChange={(e) => handleInputChange('email', e.target.value)}
-                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors ${
+                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors ${
                           errors.email ? 'border-red-500' : 'border-gray-300'
                         }`}
                       />
@@ -165,14 +165,14 @@ const Contact = () => {
 
                     <div>
                       <label className="block text-sm font-semibold text-gray-900 mb-2">
-                        Phone <span className="text-orange-600">*</span>
+                        Phone <span className="text-primary-600">*</span>
                       </label>
                       <input
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => handleInputChange('phone', e.target.value)}
                         placeholder="(403) 555-1234"
-                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors ${
+                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors ${
                           errors.phone ? 'border-red-500' : 'border-gray-300'
                         }`}
                       />
@@ -183,12 +183,12 @@ const Contact = () => {
 
                     <div>
                       <label className="block text-sm font-semibold text-gray-900 mb-2">
-                        Service Area <span className="text-orange-600">*</span>
+                        Service Area <span className="text-primary-600">*</span>
                       </label>
                       <select
                         value={formData.serviceArea}
                         onChange={(e) => handleInputChange('serviceArea', e.target.value)}
-                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors ${
+                        className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors ${
                           errors.serviceArea ? 'border-red-500' : 'border-gray-300'
                         }`}
                       >
@@ -210,7 +210,7 @@ const Contact = () => {
                       <select
                         value={formData.propertyType}
                         onChange={(e) => handleInputChange('propertyType', e.target.value)}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
                       >
                         <option value="">Select property type</option>
                         <option value="Single-family">Single-family Home</option>
@@ -230,7 +230,7 @@ const Contact = () => {
                         value={formData.linearFootage}
                         onChange={(e) => handleInputChange('linearFootage', e.target.value)}
                         placeholder="e.g., 200 feet or 'Not sure'"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
                       />
                     </div>
 
@@ -241,7 +241,7 @@ const Contact = () => {
                       <select
                         value={formData.timeline}
                         onChange={(e) => handleInputChange('timeline', e.target.value)}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
                       >
                         <option value="">Select timeline</option>
                         <option value="Next 30 days">Next 30 days</option>
@@ -258,7 +258,7 @@ const Contact = () => {
                       <select
                         value={formData.hearAboutUs}
                         onChange={(e) => handleInputChange('hearAboutUs', e.target.value)}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
                       >
                         <option value="">Select an option</option>
                         <option value="Google">Google Search</option>
@@ -278,14 +278,14 @@ const Contact = () => {
                         onChange={(e) => handleInputChange('message', e.target.value)}
                         rows={5}
                         placeholder="Tell us about your project goals, specific areas you'd like lit, or any questions you have..."
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
                       />
                     </div>
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full px-6 py-4 bg-orange-600 text-white text-lg font-semibold rounded-lg hover:bg-orange-700 transition-colors shadow-md hover:shadow-lg"
+                    className="w-full px-6 py-4 bg-primary-600 text-white text-lg font-semibold rounded-lg hover:bg-primary-700 transition-colors shadow-md hover:shadow-lg"
                   >
                     Submit Request
                   </button>
@@ -298,16 +298,16 @@ const Contact = () => {
             </div>
 
             <div className="space-y-8">
-              <div className="bg-gradient-to-br from-orange-50 to-gray-50 rounded-xl p-8 border border-orange-200">
+              <div className="bg-gradient-to-br from-primary-50 to-gray-50 rounded-xl p-8 border border-primary-200">
                 <h3 className="text-xl font-bold text-gray-900 mb-6">
                   Prefer to Talk Now?
                 </h3>
                 <div className="space-y-4">
                   <a
                     href="tel:4036715625"
-                    className="flex items-center text-gray-900 hover:text-orange-600 transition-colors group"
+                    className="flex items-center text-gray-900 hover:text-primary-600 transition-colors group"
                   >
-                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-orange-600 text-white mr-4 group-hover:bg-orange-700 transition-colors">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-600 text-white mr-4 group-hover:bg-primary-700 transition-colors">
                       <Phone className="w-6 h-6" />
                     </div>
                     <div>
@@ -317,9 +317,9 @@ const Contact = () => {
                   </a>
                   <a
                     href="mailto:info@emberbright.ca"
-                    className="flex items-center text-gray-900 hover:text-orange-600 transition-colors group"
+                    className="flex items-center text-gray-900 hover:text-primary-600 transition-colors group"
                   >
-                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-orange-600 text-white mr-4 group-hover:bg-orange-700 transition-colors">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-600 text-white mr-4 group-hover:bg-primary-700 transition-colors">
                       <Mail className="w-6 h-6" />
                     </div>
                     <div>
@@ -332,24 +332,24 @@ const Contact = () => {
 
               <div className="bg-gray-50 rounded-xl p-8">
                 <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                  <MapPin className="w-6 h-6 text-orange-600 mr-2" />
+                  <MapPin className="w-6 h-6 text-primary-600 mr-2" />
                   Service Areas
                 </h3>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-orange-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary-600 mr-2 flex-shrink-0 mt-0.5" />
                     Calgary + Surrounding
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-orange-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary-600 mr-2 flex-shrink-0 mt-0.5" />
                     Edmonton + Surrounding
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-orange-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary-600 mr-2 flex-shrink-0 mt-0.5" />
                     Lethbridge + Surrounding
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-orange-600 mr-2 flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary-600 mr-2 flex-shrink-0 mt-0.5" />
                     Okanagan Area
                   </li>
                 </ul>
@@ -359,25 +359,25 @@ const Contact = () => {
                 <h3 className="text-xl font-bold mb-4">What Happens Next?</h3>
                 <ol className="space-y-3 text-sm text-gray-300">
                   <li className="flex items-start">
-                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-orange-600 text-white font-bold text-xs mr-3 flex-shrink-0 mt-0.5">
+                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary-600 text-white font-bold text-xs mr-3 flex-shrink-0 mt-0.5">
                       1
                     </span>
                     We'll review your request within 24 hours
                   </li>
                   <li className="flex items-start">
-                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-orange-600 text-white font-bold text-xs mr-3 flex-shrink-0 mt-0.5">
+                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary-600 text-white font-bold text-xs mr-3 flex-shrink-0 mt-0.5">
                       2
                     </span>
                     Schedule a convenient time for an on-site assessment
                   </li>
                   <li className="flex items-start">
-                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-orange-600 text-white font-bold text-xs mr-3 flex-shrink-0 mt-0.5">
+                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary-600 text-white font-bold text-xs mr-3 flex-shrink-0 mt-0.5">
                       3
                     </span>
                     Provide a detailed quote with no pressure
                   </li>
                   <li className="flex items-start">
-                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-orange-600 text-white font-bold text-xs mr-3 flex-shrink-0 mt-0.5">
+                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary-600 text-white font-bold text-xs mr-3 flex-shrink-0 mt-0.5">
                       4
                     </span>
                     Begin your professional installation

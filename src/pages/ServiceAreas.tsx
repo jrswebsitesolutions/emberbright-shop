@@ -62,7 +62,7 @@ const ServiceAreas = () => {
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white pt-32 pb-20 lg:pt-40 lg:pb-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <MapPin className="w-16 h-16 mx-auto mb-6 text-orange-500" />
+            <MapPin className="w-16 h-16 mx-auto mb-6 text-primary-500" />
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Where We Install
             </h1>
@@ -94,7 +94,7 @@ const ServiceAreas = () => {
               >
                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
                   <div className="flex items-center mb-4">
-                    <MapPin className="w-8 h-8 text-orange-600 mr-3" />
+                    <MapPin className="w-8 h-8 text-primary-600 mr-3" />
                     <h3 className="text-2xl lg:text-3xl font-bold text-gray-900">
                       {area.name}
                     </h3>
@@ -104,7 +104,7 @@ const ServiceAreas = () => {
                   </p>
                   <button
                     onClick={() => navigate(routes.contact)}
-                    className="inline-flex items-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-lg hover:bg-orange-700 transition-colors shadow-md hover:shadow-lg"
+                    className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors shadow-md hover:shadow-lg"
                   >
                     Request Estimate in This Area
                     <ArrowRight className="ml-2 w-5 h-5" />
@@ -115,7 +115,7 @@ const ServiceAreas = () => {
                   <div className="space-y-3">
                     {area.highlights.map((highlight, hIndex) => (
                       <div key={hIndex} className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-orange-600 mr-3 flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="w-5 h-5 text-primary-600 mr-3 flex-shrink-0 mt-0.5" />
                         <p className="text-gray-700">{highlight}</p>
                       </div>
                     ))}
@@ -135,7 +135,7 @@ const ServiceAreas = () => {
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-orange-600 mr-4 flex-shrink-0 mt-0.5" />
+                <CheckCircle className="w-6 h-6 text-primary-600 mr-4 flex-shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Climate Expertise</h3>
                   <p className="text-gray-600 text-sm">
@@ -144,7 +144,7 @@ const ServiceAreas = () => {
                 </div>
               </div>
               <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-orange-600 mr-4 flex-shrink-0 mt-0.5" />
+                <CheckCircle className="w-6 h-6 text-primary-600 mr-4 flex-shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Rapid Response</h3>
                   <p className="text-gray-600 text-sm">
@@ -153,7 +153,7 @@ const ServiceAreas = () => {
                 </div>
               </div>
               <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-orange-600 mr-4 flex-shrink-0 mt-0.5" />
+                <CheckCircle className="w-6 h-6 text-primary-600 mr-4 flex-shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Regional Knowledge</h3>
                   <p className="text-gray-600 text-sm">
@@ -162,7 +162,7 @@ const ServiceAreas = () => {
                 </div>
               </div>
               <div className="flex items-start">
-                <CheckCircle className="w-6 h-6 text-orange-600 mr-4 flex-shrink-0 mt-0.5" />
+                <CheckCircle className="w-6 h-6 text-primary-600 mr-4 flex-shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Community Investment</h3>
                   <p className="text-gray-600 text-sm">
@@ -177,7 +177,7 @@ const ServiceAreas = () => {
 
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-orange-50 to-gray-50 rounded-xl p-8 lg:p-12 border border-orange-200 text-center">
+          <div className="bg-gradient-to-br from-primary-50 to-gray-50 rounded-xl p-8 lg:p-12 border border-primary-200 text-center">
             <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
               Don't See Your Area?
             </h2>
@@ -187,7 +187,7 @@ const ServiceAreas = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button
                 onClick={() => navigate(routes.contact)}
-                className="w-full sm:w-auto px-8 py-3 bg-orange-600 text-white font-semibold rounded-lg hover:bg-orange-700 transition-colors shadow-md hover:shadow-lg inline-flex items-center justify-center"
+                className="w-full sm:w-auto px-8 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors shadow-md hover:shadow-lg inline-flex items-center justify-center"
               >
                 Contact Us
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -203,17 +203,17 @@ const ServiceAreas = () => {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-orange-600 to-orange-700 text-white">
+      <section className="py-16 lg:py-24 bg-gradient-to-br from-primary-600 to-primary-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-lg text-orange-100 mb-8 leading-relaxed">
+          <p className="text-lg text-primary-100 mb-8 leading-relaxed">
             Request your free estimate today and discover how EmberBright can transform your home with stunning permanent LED lighting
           </p>
           <button
             onClick={() => navigate(routes.contact)}
-            className="px-8 py-4 bg-white text-orange-600 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl inline-flex items-center"
+            className="px-8 py-4 bg-white text-primary-600 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl inline-flex items-center"
           >
             Get Your Free Estimate
             <ArrowRight className="ml-2 w-5 h-5" />

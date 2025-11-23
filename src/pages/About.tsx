@@ -83,7 +83,7 @@ const About = () => {
           <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
             {values.map((value, index) => (
               <div key={index} className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-orange-100 text-orange-600 mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary-100 text-primary-600 mb-6">
                   <value.icon className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
@@ -111,27 +111,27 @@ const About = () => {
                 We partner exclusively with vetted local contractors who share our commitment to excellence. Each contractor undergoes rigorous training in our installation standards, safety protocols, and customer service expectations. This ensures every EmberBright installation meets our exacting quality standards.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-orange-50 to-gray-50 rounded-xl p-8 lg:p-12">
+            <div className="bg-gradient-to-br from-primary-50 to-gray-50 rounded-xl p-8 lg:p-12">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Local Matters</h3>
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <CheckCircle className="w-6 h-6 text-orange-600 mr-3 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-primary-600 mr-3 flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700">Faster response times for service and support</p>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle className="w-6 h-6 text-orange-600 mr-3 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-primary-600 mr-3 flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700">Contractors familiar with regional building codes</p>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle className="w-6 h-6 text-orange-600 mr-3 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-primary-600 mr-3 flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700">Supporting the Western Canadian economy</p>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle className="w-6 h-6 text-orange-600 mr-3 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-primary-600 mr-3 flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700">Products proven in Canadian climate conditions</p>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle className="w-6 h-6 text-orange-600 mr-3 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-6 h-6 text-primary-600 mr-3 flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700">Accountability and long-term relationships</p>
                 </div>
               </div>
@@ -154,7 +154,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
             {promises.map((promise, index) => (
               <div key={index} className="flex items-start bg-gray-800 rounded-lg p-6 hover:bg-gray-750 transition-colors">
-                <CheckCircle className="w-6 h-6 text-orange-500 mr-4 flex-shrink-0 mt-0.5" />
+                <CheckCircle className="w-6 h-6 text-primary-500 mr-4 flex-shrink-0 mt-0.5" />
                 <p className="text-gray-200 leading-relaxed">{promise}</p>
               </div>
             ))}
@@ -162,30 +162,30 @@ const About = () => {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-orange-600 to-orange-700 text-white">
+      <section className="py-16 lg:py-24 bg-gradient-to-br from-primary-600 to-primary-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Ready to Transform Your Property?
           </h2>
-          <p className="text-lg text-orange-100 mb-8 leading-relaxed">
+          <p className="text-lg text-primary-100 mb-8 leading-relaxed">
             Let's discuss how EmberBright can enhance your home with beautiful, long-lasting permanent LED lighting
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               onClick={() => navigate(routes.contact)}
-              className="w-full sm:w-auto px-8 py-4 bg-white text-orange-600 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl inline-flex items-center justify-center"
+              className="w-full sm:w-auto px-8 py-4 bg-white text-primary-600 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl inline-flex items-center justify-center"
             >
               Start Your Free Estimate
               <ArrowRight className="ml-2 w-5 h-5" />
             </button>
             <a
               href="tel:4036715625"
-              className="w-full sm:w-auto px-8 py-4 bg-orange-800 text-white text-lg font-semibold rounded-lg hover:bg-orange-900 transition-all shadow-xl hover:shadow-2xl"
+              className="w-full sm:w-auto px-8 py-4 bg-primary-800 text-white text-lg font-semibold rounded-lg hover:bg-primary-900 transition-all shadow-xl hover:shadow-2xl"
             >
               Call (403) 671-5625
             </a>
           </div>
-          <p className="mt-8 text-sm text-orange-100">
+          <p className="mt-8 text-sm text-primary-100">
             <strong>Email:</strong>{' '}
             <a href="mailto:info@emberbright.ca" className="underline hover:text-white transition-colors">
               info@emberbright.ca

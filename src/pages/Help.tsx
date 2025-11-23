@@ -73,7 +73,7 @@ const Help = () => {
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white pt-32 pb-20 lg:pt-40 lg:pb-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <HelpCircle className="w-16 h-16 mx-auto mb-6 text-orange-500" />
+            <HelpCircle className="w-16 h-16 mx-auto mb-6 text-primary-500" />
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Help & FAQ
             </h1>
@@ -100,7 +100,7 @@ const Help = () => {
                     {faq.question}
                   </h3>
                   {openIndex === index ? (
-                    <ChevronUp className="w-6 h-6 text-orange-600 flex-shrink-0" />
+                    <ChevronUp className="w-6 h-6 text-primary-600 flex-shrink-0" />
                   ) : (
                     <ChevronDown className="w-6 h-6 text-gray-400 flex-shrink-0" />
                   )}
@@ -127,7 +127,7 @@ const Help = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               onClick={() => navigate(routes.contact)}
-              className="w-full sm:w-auto px-8 py-4 bg-orange-600 text-white text-lg font-semibold rounded-lg hover:bg-orange-700 transition-all shadow-md hover:shadow-lg inline-flex items-center justify-center"
+              className="w-full sm:w-auto px-8 py-4 bg-primary-600 text-white text-lg font-semibold rounded-lg hover:bg-primary-700 transition-all shadow-md hover:shadow-lg inline-flex items-center justify-center"
             >
               Contact Us
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -141,7 +141,7 @@ const Help = () => {
           </div>
           <p className="mt-8 text-gray-600">
             Email us at{' '}
-            <a href="mailto:info@emberbright.ca" className="text-orange-600 hover:text-orange-700 font-semibold">
+            <a href="mailto:info@emberbright.ca" className="text-primary-600 hover:text-primary-700 font-semibold">
               info@emberbright.ca
             </a>
           </p>

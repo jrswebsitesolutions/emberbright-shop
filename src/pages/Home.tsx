@@ -151,7 +151,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
-      <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-orange-900 text-white pt-32 pb-20 lg:pt-40 lg:pb-28">
+      <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-primary-900 text-white pt-32 pb-20 lg:pt-40 lg:pb-28">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2YzAtMS4xMDUuODk1LTIgMi0yaDRjMS4xMDUgMCAyIC44OTUgMiAydjRjMCAxLjEwNS0uODk1IDItMiAyaC00Yy0xLjEwNSAwLTItLjg5NS0yLTJ2LTR6bS0yMCAwYzAtMS4xMDUuODk1LTIgMi0yaDRjMS4xMDUgMCAyIC44OTUgMiAydjRjMCAxLjEwNS0uODk1IDItMiAyaC00Yy0xLjEwNSAwLTItLjg5NS0yLTJ2LTR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-40"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -165,7 +165,7 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button
                 onClick={() => navigate(routes.contact)}
-                className="w-full sm:w-auto px-8 py-4 bg-orange-600 text-white text-lg font-semibold rounded-lg hover:bg-orange-700 transition-all shadow-xl hover:shadow-2xl hover:scale-105"
+                className="w-full sm:w-auto px-8 py-4 bg-primary-600 text-white text-lg font-semibold rounded-lg hover:bg-primary-700 transition-all shadow-xl hover:shadow-2xl hover:scale-105"
               >
                 Get a Free Estimate
               </button>
@@ -194,7 +194,7 @@ const Home = () => {
           <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
             {features.map((feature, index) => (
               <div key={index} className="text-center group">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-orange-100 text-orange-600 mb-6 group-hover:bg-orange-600 group-hover:text-white transition-all">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary-100 text-primary-600 mb-6 group-hover:bg-primary-600 group-hover:text-white transition-all">
                   <feature.icon className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
@@ -219,7 +219,7 @@ const Home = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {appFeatures.map((feature, index) => (
               <div key={index} className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow">
-                <feature.icon className="w-12 h-12 text-orange-600 mb-4" />
+                <feature.icon className="w-12 h-12 text-primary-600 mb-4" />
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </div>
@@ -242,7 +242,7 @@ const Home = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {automationFeatures.map((feature, index) => (
               <div key={index} className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-orange-600 text-white mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary-600 text-white mb-6">
                   <feature.icon className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
@@ -270,7 +270,7 @@ const Home = () => {
               <div className="space-y-4">
                 {technicalSpecs.map((spec, index) => (
                   <div key={index} className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-orange-500 mr-3 flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary-500 mr-3 flex-shrink-0 mt-0.5" />
                     <div>
                       <span className="font-semibold">{spec.label}:</span>
                       <span className="ml-2 text-gray-300">{spec.value}</span>
@@ -285,7 +285,7 @@ const Home = () => {
               <div className="space-y-4">
                 {trackFeatures.map((feature, index) => (
                   <div key={index} className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-orange-500 mr-3 flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary-500 mr-3 flex-shrink-0 mt-0.5" />
                     <p className="text-gray-300">{feature}</p>
                   </div>
                 ))}
@@ -313,8 +313,8 @@ const Home = () => {
 
           <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
             {experienceCards.map((card, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-50 to-orange-50 rounded-xl p-8 shadow-md hover:shadow-xl transition-all">
-                <card.icon className="w-12 h-12 text-orange-600 mb-4" />
+              <div key={index} className="bg-gradient-to-br from-gray-50 to-primary-50 rounded-xl p-8 shadow-md hover:shadow-xl transition-all">
+                <card.icon className="w-12 h-12 text-primary-600 mb-4" />
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{card.title}</h3>
                 <p className="text-gray-700 leading-relaxed">{card.description}</p>
               </div>
@@ -345,7 +345,7 @@ const Home = () => {
           <div className="text-center mt-12">
             <button
               onClick={() => navigate(routes.gallery)}
-              className="inline-flex items-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-lg hover:bg-orange-700 transition-colors shadow-md hover:shadow-lg"
+              className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors shadow-md hover:shadow-lg"
             >
               View Full Gallery
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -367,7 +367,7 @@ const Home = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {['Calgary + Surrounding', 'Edmonton + Surrounding', 'Lethbridge + Surrounding', 'Okanagan Area'].map((area, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-6 text-center hover:bg-orange-50 transition-colors">
+              <div key={index} className="bg-gray-50 rounded-lg p-6 text-center hover:bg-primary-50 transition-colors">
                 <h3 className="font-bold text-gray-900 mb-2">{area}</h3>
               </div>
             ))}
@@ -408,7 +408,7 @@ const Home = () => {
           <div className="text-center mt-12">
             <button
               onClick={() => navigate(routes.help)}
-              className="inline-flex items-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-lg hover:bg-orange-700 transition-colors shadow-md hover:shadow-lg"
+              className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors shadow-md hover:shadow-lg"
             >
               View All FAQs
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -448,7 +448,7 @@ const Home = () => {
                     required
                     value={formData.firstName}
                     onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   />
                 </div>
                 <div>
@@ -460,7 +460,7 @@ const Home = () => {
                     required
                     value={formData.lastName}
                     onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   />
                 </div>
                 <div>
@@ -472,7 +472,7 @@ const Home = () => {
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   />
                 </div>
                 <div>
@@ -484,7 +484,7 @@ const Home = () => {
                     required
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   />
                 </div>
                 <div>
@@ -495,7 +495,7 @@ const Home = () => {
                     required
                     value={formData.serviceArea}
                     onChange={(e) => setFormData({ ...formData, serviceArea: e.target.value })}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   >
                     <option value="">Select an area</option>
                     <option value="Calgary">Calgary + Surrounding</option>
@@ -511,7 +511,7 @@ const Home = () => {
                   <select
                     value={formData.propertyType}
                     onChange={(e) => setFormData({ ...formData, propertyType: e.target.value })}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   >
                     <option value="">Select property type</option>
                     <option value="Single-family">Single-family</option>
@@ -529,7 +529,7 @@ const Home = () => {
                     value={formData.linearFootage}
                     onChange={(e) => setFormData({ ...formData, linearFootage: e.target.value })}
                     placeholder="e.g., 200 feet or 'Not sure'"
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   />
                 </div>
                 <div className="md:col-span-2">
@@ -540,14 +540,14 @@ const Home = () => {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     rows={4}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   />
                 </div>
               </div>
 
               <button
                 type="submit"
-                className="w-full mt-6 px-6 py-3.5 bg-orange-600 text-white text-lg font-semibold rounded-lg hover:bg-orange-700 transition-colors shadow-md hover:shadow-lg"
+                className="w-full mt-6 px-6 py-3.5 bg-primary-600 text-white text-lg font-semibold rounded-lg hover:bg-primary-700 transition-colors shadow-md hover:shadow-lg"
               >
                 Submit Request
               </button>

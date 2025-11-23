@@ -82,7 +82,7 @@ const Gallery = () => {
                 onClick={() => setFilter(category.id)}
                 className={`px-6 py-2.5 rounded-lg font-semibold transition-all ${
                   filter === category.id
-                    ? 'bg-orange-600 text-white shadow-md'
+                    ? 'bg-primary-600 text-white shadow-md'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -122,7 +122,7 @@ const Gallery = () => {
         <div className="fixed inset-0 bg-black bg-opacity-95 z-50 flex items-center justify-center p-4">
           <button
             onClick={closeLightbox}
-            className="absolute top-4 right-4 p-2 text-white hover:text-orange-500 transition-colors"
+            className="absolute top-4 right-4 p-2 text-white hover:text-primary-500 transition-colors"
           >
             <X className="w-8 h-8" />
           </button>
@@ -130,7 +130,7 @@ const Gallery = () => {
           {selectedImage > 0 && (
             <button
               onClick={goToPrevious}
-              className="absolute left-4 p-2 text-white hover:text-orange-500 transition-colors"
+              className="absolute left-4 p-2 text-white hover:text-primary-500 transition-colors"
             >
               <ChevronLeft className="w-8 h-8" />
             </button>
@@ -139,7 +139,7 @@ const Gallery = () => {
           {selectedImage < filteredImages.length - 1 && (
             <button
               onClick={goToNext}
-              className="absolute right-4 p-2 text-white hover:text-orange-500 transition-colors"
+              className="absolute right-4 p-2 text-white hover:text-primary-500 transition-colors"
             >
               <ChevronRight className="w-8 h-8" />
             </button>

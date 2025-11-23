@@ -42,7 +42,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {serviceLocations.map((location) => (
                 <li key={location} className="flex items-start">
-                  <MapPin className="w-4 h-4 mt-0.5 mr-2 flex-shrink-0 text-orange-500" />
+                  <MapPin className="w-4 h-4 mt-0.5 mr-2 flex-shrink-0 text-primary-500" />
                   <span className="text-sm">{location}</span>
                 </li>
               ))}
@@ -56,7 +56,7 @@ const Footer = () => {
                 <li key={link.path}>
                   <button
                     onClick={() => navigate(link.path)}
-                    className="text-sm hover:text-orange-500 transition-colors"
+                    className="text-sm hover:text-primary-400 transition-colors"
                   >
                     {link.label}
                   </button>
@@ -71,7 +71,7 @@ const Footer = () => {
               <li>
                 <a
                   href="mailto:info@emberbright.ca"
-                  className="flex items-center text-sm hover:text-orange-500 transition-colors"
+                  className="flex items-center text-sm hover:text-primary-400 transition-colors"
                 >
                   <Mail className="w-4 h-4 mr-2 flex-shrink-0" />
                   <span>info@emberbright.ca</span>
@@ -80,7 +80,7 @@ const Footer = () => {
               <li>
                 <a
                   href="tel:4036715625"
-                  className="flex items-center text-sm hover:text-orange-500 transition-colors"
+                  className="flex items-center text-sm hover:text-primary-400 transition-colors"
                 >
                   <Phone className="w-4 h-4 mr-2 flex-shrink-0" />
                   <span>(403) 671-5625</span>

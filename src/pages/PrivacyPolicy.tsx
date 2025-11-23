@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white pt-32 pb-20 lg:pt-40 lg:pb-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <Shield className="w-16 h-16 mx-auto mb-6 text-orange-500" />
+            <Shield className="w-16 h-16 mx-auto mb-6 text-primary-500" />
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Privacy Policy
             </h1>
@@ -173,9 +173,9 @@ const PrivacyPolicy = () => {
                 </p>
               </div>
 
-              <div className="bg-orange-50 border border-orange-200 rounded-xl p-8 mt-12">
+              <div className="bg-primary-50 border border-primary-200 rounded-xl p-8 mt-12">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                  <Mail className="w-6 h-6 text-orange-600 mr-3" />
+                  <Mail className="w-6 h-6 text-primary-600 mr-3" />
                   Contact Us About Privacy
                 </h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
@@ -185,13 +185,13 @@ const PrivacyPolicy = () => {
                   <p className="text-gray-900 font-semibold">EmberBright Solutions Inc.</p>
                   <p className="text-gray-700">
                     Email:{' '}
-                    <a href="mailto:info@emberbright.ca" className="text-orange-600 hover:text-orange-700 font-semibold">
+                    <a href="mailto:info@emberbright.ca" className="text-primary-600 hover:text-primary-700 font-semibold">
                       info@emberbright.ca
                     </a>
                   </p>
                   <p className="text-gray-700">
                     Phone:{' '}
-                    <a href="tel:4036715625" className="text-orange-600 hover:text-orange-700 font-semibold">
+                    <a href="tel:4036715625" className="text-primary-600 hover:text-primary-700 font-semibold">
                       (403) 671-5625
                     </a>
                   </p>

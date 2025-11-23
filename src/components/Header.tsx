@@ -42,7 +42,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           <button
             onClick={() => navigate(routes.home)}
-            className="text-2xl font-bold text-gray-900 hover:text-orange-600 transition-colors"
+            className="text-2xl font-bold text-gray-900 hover:text-primary-500 transition-colors"
           >
             EmberBright
           </button>
@@ -54,8 +54,8 @@ const Header = () => {
                 onClick={() => navigate(link.path)}
                 className={`text-sm font-medium transition-colors ${
                   currentPage === link.path
-                    ? 'text-orange-600'
-                    : 'text-gray-700 hover:text-orange-600'
+                    ? 'text-primary-500'
+                    : 'text-gray-700 hover:text-primary-500'
                 }`}
               >
                 {link.label}
@@ -66,14 +66,14 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <a
               href="tel:4036715625"
-              className="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-gray-700 hover:text-orange-600 transition-colors"
+              className="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary-500 transition-colors"
             >
               <Phone className="w-4 h-4" />
               <span>(403) 671-5625</span>
             </a>
             <button
               onClick={() => navigate(routes.contact)}
-              className="px-6 py-2.5 bg-orange-600 text-white text-sm font-semibold rounded-lg hover:bg-orange-700 transition-colors shadow-md hover:shadow-lg"
+              className="px-6 py-2.5 bg-primary-500 text-white text-sm font-semibold rounded-lg hover:bg-primary-600 transition-colors shadow-md hover:shadow-lg"
             >
               Free Estimate
             </button>
@@ -81,7 +81,7 @@ const Header = () => {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-gray-700 hover:text-orange-600 transition-colors"
+            className="lg:hidden p-2 text-gray-700 hover:text-primary-500 transition-colors"
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -97,8 +97,8 @@ const Header = () => {
                 onClick={() => navigate(link.path)}
                 className={`block w-full text-left px-4 py-2 text-base font-medium rounded-lg transition-colors ${
                   currentPage === link.path
-                    ? 'text-orange-600 bg-orange-50'
-                    : 'text-gray-700 hover:text-orange-600 hover:bg-gray-50'
+                    ? 'text-primary-500 bg-primary-50'
+                    : 'text-gray-700 hover:text-primary-500 hover:bg-gray-50'
                 }`}
               >
                 {link.label}
@@ -107,14 +107,14 @@ const Header = () => {
             <div className="pt-4 space-y-3 border-t border-gray-200">
               <a
                 href="tel:4036715625"
-                className="flex items-center justify-center space-x-2 w-full px-4 py-2.5 text-base font-medium text-gray-700 border border-gray-300 rounded-lg hover:border-orange-600 hover:text-orange-600 transition-colors"
+                className="flex items-center justify-center space-x-2 w-full px-4 py-2.5 text-base font-medium text-gray-700 border border-gray-300 rounded-lg hover:border-primary-500 hover:text-primary-500 transition-colors"
               >
                 <Phone className="w-4 h-4" />
                 <span>(403) 671-5625</span>
               </a>
               <button
                 onClick={() => navigate(routes.contact)}
-                className="w-full px-6 py-2.5 bg-orange-600 text-white text-base font-semibold rounded-lg hover:bg-orange-700 transition-colors shadow-md"
+                className="w-full px-6 py-2.5 bg-primary-500 text-white text-base font-semibold rounded-lg hover:bg-primary-600 transition-colors shadow-md"
               >
                 Free Estimate
               </button>

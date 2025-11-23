@@ -111,7 +111,7 @@ const ResidentialLighting = () => {
 
   return (
     <div className="min-h-screen">
-      <section className="bg-gradient-to-br from-gray-900 via-orange-900 to-gray-900 text-white pt-32 pb-20 lg:pt-40 lg:pb-28">
+      <section className="bg-gradient-to-br from-gray-900 via-primary-900 to-gray-900 text-white pt-32 pb-20 lg:pt-40 lg:pb-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
@@ -122,7 +122,7 @@ const ResidentialLighting = () => {
             </p>
             <button
               onClick={() => navigate(routes.contact)}
-              className="px-8 py-4 bg-orange-600 text-white text-lg font-semibold rounded-lg hover:bg-orange-700 transition-all shadow-xl hover:shadow-2xl hover:scale-105 inline-flex items-center"
+              className="px-8 py-4 bg-primary-600 text-white text-lg font-semibold rounded-lg hover:bg-primary-700 transition-all shadow-xl hover:shadow-2xl hover:scale-105 inline-flex items-center"
             >
               Request Your Free Estimate
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -145,7 +145,7 @@ const ResidentialLighting = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
             {steps.map((step) => (
               <div key={step.number} className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-orange-600 text-white text-2xl font-bold mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary-600 text-white text-2xl font-bold mb-4">
                   {step.number}
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-3">{step.title}</h3>
@@ -175,13 +175,13 @@ const ResidentialLighting = () => {
             </div>
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center">
-                <Smartphone className="w-6 h-6 mr-3 text-orange-600" />
+                <Smartphone className="w-6 h-6 mr-3 text-primary-600" />
                 Key App Capabilities
               </h3>
               <div className="space-y-3">
                 {appFeatures.map((feature, index) => (
                   <div key={index} className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-orange-600 mr-3 flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary-600 mr-3 flex-shrink-0 mt-0.5" />
                     <p className="text-sm text-gray-700">{feature}</p>
                   </div>
                 ))}
@@ -222,7 +222,7 @@ const ResidentialLighting = () => {
             ))}
           </div>
 
-          <div className="mt-12 bg-orange-50 border border-orange-200 rounded-xl p-8">
+          <div className="mt-12 bg-primary-50 border border-primary-200 rounded-xl p-8">
             <h3 className="text-xl font-bold text-gray-900 mb-4">Precision Installation Process</h3>
             <p className="text-gray-700 leading-relaxed">
               During installation, our technicians perform a complete LED count for your specific system. This count is programmed into your controller, ensuring that all patterns and animations are perfectly calibrated to your home's unique configuration. This attention to detail guarantees optimal visual impact and seamless pattern transitions.
@@ -245,7 +245,7 @@ const ResidentialLighting = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {useCases.map((useCase, index) => (
               <div key={index} className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-orange-600 mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary-600 mb-6">
                   <useCase.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">{useCase.title}</h3>
@@ -269,8 +269,8 @@ const ResidentialLighting = () => {
 
           <div className="grid md:grid-cols-2 gap-6">
             {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-start bg-gray-50 rounded-lg p-6 hover:bg-orange-50 transition-colors">
-                <CheckCircle className="w-6 h-6 text-orange-600 mr-4 flex-shrink-0 mt-0.5" />
+              <div key={index} className="flex items-start bg-gray-50 rounded-lg p-6 hover:bg-primary-50 transition-colors">
+                <CheckCircle className="w-6 h-6 text-primary-600 mr-4 flex-shrink-0 mt-0.5" />
                 <p className="text-gray-700 leading-relaxed">{benefit}</p>
               </div>
             ))}
@@ -278,25 +278,25 @@ const ResidentialLighting = () => {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-orange-600 to-orange-700 text-white">
+      <section className="py-16 lg:py-24 bg-gradient-to-br from-primary-600 to-primary-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Ready to Upgrade Your Home Lighting?
           </h2>
-          <p className="text-lg text-orange-100 mb-8 leading-relaxed">
+          <p className="text-lg text-primary-100 mb-8 leading-relaxed">
             Request a free estimate today and discover how EmberBright can transform your property with stunning permanent LED lighting
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               onClick={() => navigate(routes.contact)}
-              className="w-full sm:w-auto px-8 py-4 bg-white text-orange-600 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl inline-flex items-center justify-center"
+              className="w-full sm:w-auto px-8 py-4 bg-white text-primary-600 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl inline-flex items-center justify-center"
             >
               Request Your Free Estimate
               <ArrowRight className="ml-2 w-5 h-5" />
             </button>
             <a
               href="tel:4036715625"
-              className="w-full sm:w-auto px-8 py-4 bg-orange-800 text-white text-lg font-semibold rounded-lg hover:bg-orange-900 transition-all shadow-xl hover:shadow-2xl"
+              className="w-full sm:w-auto px-8 py-4 bg-primary-800 text-white text-lg font-semibold rounded-lg hover:bg-primary-900 transition-all shadow-xl hover:shadow-2xl"
             >
               Call (403) 671-5625
             </a>
