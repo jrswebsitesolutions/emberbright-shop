@@ -70,14 +70,14 @@ const Help = () => {
 
   return (
     <div className="min-h-screen">
-      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white pt-32 pb-20 lg:pt-40 lg:pb-28">
+      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white pt-24 sm:pt-32 pb-16 sm:pb-20 lg:pt-40 lg:pb-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <HelpCircle className="w-16 h-16 mx-auto mb-6 text-primary-500" />
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            <HelpCircle className="w-12 sm:w-16 h-12 sm:h-16 mx-auto mb-4 sm:mb-6 text-primary-500" />
+            <h1 className="text-2xl sm:text-3xl sm:text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6 px-2">
               Help & FAQ
             </h1>
-            <p className="text-lg sm:text-xl text-gray-200 leading-relaxed">
+            <p className="text-base sm:text-lg sm:text-xl text-gray-200 leading-relaxed px-2">
               Find answers to common questions about EmberBright permanent LED lighting systems
             </p>
           </div>

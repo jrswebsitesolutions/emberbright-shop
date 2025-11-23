@@ -155,8 +155,8 @@ const Home = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="flex justify-center mb-4 sm:mb-6">
-              <h1 className="text-3xl sm:text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight sm:whitespace-nowrap">
+            <div className="flex justify-center mb-4 sm:mb-6 px-2">
+              <h1 className="text-2xl sm:text-3xl sm:text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight sm:whitespace-nowrap text-center">
                 The future of home lighting
               </h1>
             </div>
@@ -188,7 +188,7 @@ const Home = () => {
               The EmberBright System
             </h2>
             <div className="flex justify-center">
-              <p className="text-lg text-gray-600 whitespace-nowrap">
+              <p className="text-base sm:text-lg text-gray-600 sm:whitespace-nowrap px-2 text-center">
                 Discover the key features that make EmberBright the premium choice for permanent outdoor lighting
               </p>
             </div>
@@ -424,7 +424,7 @@ const Home = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <div className="flex justify-center mb-4">
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 whitespace-nowrap">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 sm:whitespace-nowrap px-2 text-center">
                 Get Your Free Estimate
               </h2>
             </div>
