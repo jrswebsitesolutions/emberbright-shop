@@ -47,12 +47,12 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           <button
             onClick={() => navigate(routes.home)}
-            className="flex items-center h-12 hover:opacity-80 transition-opacity"
+            className="flex items-center hover:opacity-80 transition-opacity"
           >
             <img 
               src="/logo.webp" 
               alt="EmberBright" 
-              className="h-full w-auto"
+              className="h-16 w-auto"
               onError={(e) => {
                 // Fallback to text if image doesn't load
                 const target = e.target as HTMLImageElement;
