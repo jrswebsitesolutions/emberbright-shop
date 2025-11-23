@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Phone, Menu, X, User, ShoppingCart } from 'lucide-react';
+import { Menu, X, User, ShoppingCart } from 'lucide-react';
 import { useNavigation } from '../context/NavigationContext';
 import { routes } from '../utils/navigation';
 import CartIcon from './CartIcon';
@@ -26,15 +26,12 @@ const Header = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  // Streamlined navigation for e-commerce - essential items only
   const navLinks = [
     { label: 'Home', path: routes.home },
-    { label: 'About', path: routes.about },
     { label: 'Products', path: routes.products },
-    { label: 'Residential Lighting', path: routes.residential },
     { label: 'Gallery', path: routes.gallery },
-    { label: 'Service Areas', path: routes.serviceAreas },
-    { label: 'FAQ', path: routes.faq },
-    { label: 'Contact', path: routes.contact }
+    { label: 'About', path: routes.about }
   ];
 
   return (
@@ -68,28 +65,15 @@ const Header = () => {
             ))}
           </nav>
 
-          <div className="hidden lg:flex items-center space-x-4">
-            <a
-              href="tel:4036715625"
-              className="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary-500 transition-colors"
-            >
-              <Phone className="w-4 h-4" />
-              <span>(403) 671-5625</span>
-            </a>
+          <div className="hidden lg:flex items-center space-x-3">
             <button
               onClick={() => navigate(routes.products)}
-              className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary-500 transition-colors"
+              className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary-500 transition-colors"
               aria-label="Account"
             >
               <User className="w-5 h-5" />
             </button>
             <CartIcon />
-            <button
-              onClick={() => navigate(routes.estimate)}
-              className="px-6 py-2.5 bg-primary-500 text-white text-sm font-semibold rounded-lg hover:bg-primary-600 transition-colors shadow-md hover:shadow-lg"
-            >
-              Free Estimate
-            </button>
           </div>
 
           <button
@@ -118,13 +102,6 @@ const Header = () => {
               </button>
             ))}
             <div className="pt-4 space-y-3 border-t border-gray-200">
-              <a
-                href="tel:4036715625"
-                className="flex items-center justify-center space-x-2 w-full px-4 py-2.5 text-base font-medium text-gray-700 border border-gray-300 rounded-lg hover:border-primary-500 hover:text-primary-500 transition-colors"
-              >
-                <Phone className="w-4 h-4" />
-                <span>(403) 671-5625</span>
-              </a>
               <button
                 onClick={() => navigate(routes.products)}
                 className="flex items-center justify-center space-x-2 w-full px-4 py-2.5 text-base font-medium text-gray-700 border border-gray-300 rounded-lg hover:border-primary-500 hover:text-primary-500 transition-colors"
@@ -138,12 +115,6 @@ const Header = () => {
               >
                 <ShoppingCart className="w-5 h-5" />
                 <span>Cart ({cart.itemCount})</span>
-              </button>
-              <button
-                onClick={() => navigate(routes.estimate)}
-                className="w-full px-6 py-2.5 bg-primary-500 text-white text-base font-semibold rounded-lg hover:bg-primary-600 transition-colors shadow-md"
-              >
-                Free Estimate
               </button>
             </div>
           </nav>
