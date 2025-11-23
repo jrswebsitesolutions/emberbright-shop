@@ -42,9 +42,11 @@ const About = () => {
       <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white pt-32 pb-20 lg:pt-40 lg:pb-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              About EmberBright Solutions
-            </h1>
+            <div className="flex justify-center mb-6">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight whitespace-nowrap">
+                About EmberBright Solutions
+              </h1>
+            </div>
             <p className="text-lg sm:text-xl text-gray-200 leading-relaxed">
               Founded in Calgary by two driven entrepreneurs committed to transforming outdoor lighting across Western Canada
             </p>
