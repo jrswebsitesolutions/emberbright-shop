@@ -17,5 +17,6 @@
   
   button {
     font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
   }
 }
