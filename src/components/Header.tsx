@@ -70,7 +70,7 @@ const Header = () => {
               <button
                 key={link.path}
                 onClick={() => navigate(link.path)}
-                className={`text-sm font-medium transition-colors font-heading ${
+                className={`text-sm font-medium transition-colors ${
                   currentPage === link.path
                     ? 'text-primary-500'
                     : 'text-gray-700 hover:text-primary-500'
@@ -114,7 +114,7 @@ const Header = () => {
                   <button
                     key={link.path}
                     onClick={() => navigate(link.path)}
-                    className={`block w-full text-left px-4 py-2 text-base font-medium rounded-lg transition-colors font-heading ${
+                    className={`block w-full text-left px-4 py-2 text-base font-medium rounded-lg transition-colors ${
                       currentPage === link.path
                         ? 'text-primary-500 bg-primary-50'
                         : 'text-gray-700 hover:text-primary-500 hover:bg-gray-50'
