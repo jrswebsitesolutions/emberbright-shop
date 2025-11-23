@@ -17,6 +17,12 @@ export default {
           900: '#041723',
         },
       },
+      fontFamily: {
+        heading: ['Archivo Black', 'sans-serif'],
+        body: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+        button: ['Space Grotesk', 'sans-serif'],
+        misc: ['Space Grotesk', 'sans-serif'],
+      },
     },
   },
   plugins: [],
