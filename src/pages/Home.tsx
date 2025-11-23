@@ -155,24 +155,24 @@ const Home = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="flex justify-center mb-6">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight whitespace-nowrap">
+            <div className="flex justify-center mb-4 sm:mb-6">
+              <h1 className="text-3xl sm:text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight sm:whitespace-nowrap">
                 The future of home lighting
               </h1>
             </div>
-            <p className="text-lg sm:text-xl text-gray-200 mb-10 leading-relaxed">
+            <p className="text-base sm:text-lg sm:text-xl text-gray-200 mb-6 sm:mb-10 leading-relaxed px-2">
               High-quality permanent LED lighting with professional installation, complete automation, and a stunning 20+ year lifespan. Elevate your curb appeal effortlessly.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
               <button
                 onClick={() => navigate(routes.estimate)}
-                className="w-full sm:w-auto px-8 py-4 bg-primary-600 text-white text-lg font-semibold rounded-lg hover:bg-primary-700 transition-all shadow-xl hover:shadow-2xl hover:scale-105"
+                className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-primary-600 text-white text-base sm:text-lg font-semibold rounded-lg hover:bg-primary-700 transition-all shadow-xl hover:shadow-2xl hover:scale-105 touch-manipulation min-h-[44px]"
               >
                 Get a Free Estimate
               </button>
               <button
                 onClick={() => navigate(routes.residential)}
-                className="w-full sm:w-auto px-8 py-4 bg-white text-gray-900 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl"
+                className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-white text-gray-900 text-base sm:text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl touch-manipulation min-h-[44px]"
               >
                 View Residential Lighting
               </button>
@@ -181,7 +181,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -208,7 +208,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -231,7 +231,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -256,7 +256,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24 bg-gray-900 text-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -303,7 +303,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -326,7 +326,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -357,7 +357,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -388,7 +388,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 lg:py-24 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -420,7 +420,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <div className="flex justify-center mb-4">

@@ -6,7 +6,7 @@
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Archivo Black', sans-serif;
   }
@@ -18,5 +18,12 @@
   button {
     font-family: 'Space Grotesk', sans-serif;
     text-transform: uppercase;
+  }
+}
+
+@layer utilities {
+  .touch-manipulation {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
   }
 }

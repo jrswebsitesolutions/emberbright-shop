@@ -22,11 +22,11 @@ const Estimate = () => {
 
   return (
     <div className="min-h-screen">
-      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white pt-32 pb-20 lg:pt-40 lg:pb-28">
+      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white pt-24 sm:pt-32 pb-16 sm:pb-20 lg:pt-40 lg:pb-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="flex justify-center mb-6">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight whitespace-nowrap">
+            <div className="flex justify-center mb-4 sm:mb-6">
+              <h1 className="text-3xl sm:text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight sm:whitespace-nowrap">
                 Get Your Free Estimate
               </h1>
             </div>
@@ -34,12 +34,12 @@ const Estimate = () => {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-12">
+          <div className="grid lg:grid-cols-3 gap-8 sm:gap-12">
             <div className="lg:col-span-2">
-              <div className="bg-gray-50 rounded-xl p-8 lg:p-10 shadow-md">
-                <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              <div className="bg-gray-50 rounded-xl p-6 sm:p-8 lg:p-10 shadow-md">
+                <p className="text-base sm:text-lg text-gray-700 mb-6 leading-relaxed">
                   Share a few details about your property and we'll provide a tailored quote for your permanent LED lighting project
                 </p>
                 <div id="b6f7d3b2-32ea-430e-b6a2-093064933cc6-2030236"></div>
